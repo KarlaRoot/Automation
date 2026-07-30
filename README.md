@@ -1,40 +1,38 @@
 # Enterprise Automation Projects
 
-Portfolio interních podnikových aplikací vytvořených v prostředí Microsoft 365 se zaměřením na digitalizaci procesů, správu dat a automatizaci workflow.
+Portfolio interních podnikových aplikací vytvořených v prostředí Microsoft 365. Projekty ukazují analýzu požadavků, návrh datového modelu, vývoj uživatelského rozhraní, správu dat a automatizaci podnikových procesů.
 
-Dokumentace byla upravena a anonymizována pro účely portfolia.
+> Dokumentace byla anonymizována pro účely portfolia. Osobní údaje, interní adresy, identifikátory a názvy organizací nejsou zveřejněny.
 
 ## Projekty
 
-| Projekt | Technologie | Zaměření |
-|---|---|---|
-| [PoolCar](PoolCar/) | SharePoint, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel |
-| [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací |
+| Projekt | Technologie | Zaměření | Dokumentace |
+|---|---|---|---|
+| [PoolCar](PoolCar/) | SharePoint, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCar/Dokumentace/) · [Analýza](PoolCar/Analyza/) |
+| [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací | [Dokumentace](Certifikace/Dokumentace/) · [Analýza](Certifikace/Analyza/) |
+
+## Co portfolio ukazuje
+
+- převod business požadavků do funkčního řešení,
+- návrh SharePoint seznamů a vazeb mezi daty,
+- vývoj interních aplikací a formulářů,
+- filtrování, validace a řízení přístupu,
+- workflow a automatizaci procesů,
+- technickou a uživatelskou dokumentaci.
 
 ## Použité technologie
 
-- SharePoint Online
 - Microsoft Power Apps
-- Microsoft Lists
+- SharePoint Online a Microsoft Lists
 - Nintex Forms
 - Nintex Workflow
 - Microsoft 365
-
-## Oblasti řešení
-
-- digitalizace podnikových procesů
-- návrh datových modelů
-- vývoj interních business aplikací
-- workflow řízené procesy
-- formuláře a validace
-- řízení přístupových oprávnění
-- technická dokumentace
-- analýza požadavků
 
 ## Struktura repozitáře
 
 ```text
 Automation/
+├── README.md
 ├── PoolCar/
 │   ├── README.md
 │   ├── Dokumentace/
@@ -47,6 +45,6 @@ Automation/
     └── Images/
 ```
 
-## Poznámka
+## Ochrana informací
 
-Z důvodu ochrany interních informací byly názvy organizací, adresy, identifikátory a osobní údaje anonymizovány. Funkční principy a architektura řešení zůstaly zachovány.
+Funkční principy, architektura a datové modely zůstávají zachovány. Citlivý obsah byl odstraněn nebo nahrazen anonymizovanými hodnotami.
