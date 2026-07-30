@@ -8,8 +8,8 @@ Portfolio interních podnikových aplikací vytvořených v prostředí Microsof
 
 | Projekt | Technologie | Zaměření | Dokumentace |
 |---|---|---|---|
-| [PoolCar](PoolCar/) | SharePoint, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCar/Dokumentace/) · [Analýza](PoolCar/Analyza/) |
-| [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací | [Dokumentace](Certifikace/Dokumentace/) · [Analýza](Certifikace/Analyza/) |
+| [PoolCars](PoolCars/) | SharePoint, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCars/Dokumentace/) · [Analýza](PoolCars/Analyza/) |
+| [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací | [Dokumentace](Certifikace/Dokumentace/) |
 
 ## Co portfolio ukazuje
 
@@ -33,15 +33,13 @@ Portfolio interních podnikových aplikací vytvořených v prostředí Microsof
 ```text
 Automation/
 ├── README.md
-├── PoolCar/
+├── PoolCars/
 │   ├── README.md
 │   ├── Dokumentace/
-│   ├── Analyza/
-│   └── Images/
+│   └── Analyza/
 └── Certifikace/
     ├── README.md
     ├── Dokumentace/
-    ├── Analyza/
     └── Images/
 ```
 
