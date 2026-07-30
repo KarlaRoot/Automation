@@ -1,6 +1,6 @@
 # Enterprise Automation Projects
 
-Portfolio interních podnikových aplikací vytvořených v prostředí Microsoft 365. Projekty ukazují analýzu požadavků, návrh datového modelu, vývoj uživatelského rozhraní, správu dat a automatizaci podnikových procesů.
+Portfolio interních podnikových aplikací vytvořených pomocí technologií Microsoft SharePoint, Power Apps a Nintex. Projekty ukazují analýzu požadavků, návrh datového modelu, vývoj uživatelského rozhraní, správu dat a automatizaci podnikových procesů.
 
 > Dokumentace byla anonymizována pro účely portfolia. Osobní údaje, interní adresy, identifikátory a názvy organizací nejsou zveřejněny.
 
@@ -8,7 +8,7 @@ Portfolio interních podnikových aplikací vytvořených v prostředí Microsof
 
 | Projekt | Technologie | Zaměření | Dokumentace |
 |---|---|---|---|
-| [PoolCars](PoolCars/) | SharePoint, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCars/Dokumentace/) · [Analýza](PoolCars/Analyza/) |
+| [PoolCars](PoolCars/) | SharePoint 2016, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCars/Dokumentace/) · [Analýza](PoolCars/Analyza/) |
 | [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací | [Dokumentace](Certifikace/Dokumentace/) |
 
 ## Co portfolio ukazuje
@@ -23,7 +23,8 @@ Portfolio interních podnikových aplikací vytvořených v prostředí Microsof
 ## Použité technologie
 
 - Microsoft Power Apps
-- SharePoint Online a Microsoft Lists
+- SharePoint Online
+- SharePoint 2016
 - Nintex Forms
 - Nintex Workflow
 - Microsoft 365
@@ -34,7 +35,6 @@ Portfolio interních podnikových aplikací vytvořených v prostředí Microsof
 Automation/
 ├── README.md
 ├── PoolCars/
-│   ├── README.md
 │   ├── Dokumentace/
 │   └── Analyza/
 └── Certifikace/
