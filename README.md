@@ -8,7 +8,7 @@ Portfolio interních podnikových aplikací vytvořených pomocí technologií M
 
 | Projekt | Technologie | Zaměření | Dokumentace |
 |---|---|---|---|
-| [PoolCars](PoolCars/) | SharePoint 2016, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCars/Dokumentace/) · [Analýza](PoolCars/Analyza/) |
+| [PoolCar](PoolCar/) | SharePoint 2016, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCar/Dokumentace/) · [Analýza](PoolCar/Analyza/) |
 | [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací | [Dokumentace](Certifikace/Dokumentace/) |
 
 ## Co portfolio ukazuje
@@ -34,7 +34,7 @@ Portfolio interních podnikových aplikací vytvořených pomocí technologií M
 ```text
 Automation/
 ├── README.md
-├── PoolCars/
+├── PoolCar/
 │   ├── Dokumentace/
 │   └── Analyza/
 └── Certifikace/
