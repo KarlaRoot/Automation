@@ -1,6 +1,6 @@
 # Analýza
 
-Tato složka je určena pro analytické dokumenty aplikace PoolCars.
+Tato složka je určena pro analytické dokumenty aplikace PoolCar.
 
 ## Použité technologie
 
@@ -16,7 +16,7 @@ Cílem aplikace je zjednodušit proces rezervace vozidel, zajistit evidenci jeji
 
 Součástí řešení je sledování nájezdu kilometrů, evidence poškození vozidel, kontrola jejich technického stavu a dostupnosti, stejně jako evidence důležitých vlastností vozidel, například platnosti dálničních známek nebo zimní výbavy.
 
-Součástí aplikace je schvalovací proces rezervací a automaticky vytváří knihu jízd pro evidenci uskutečněných služebních cest.
+Součástí aplikace je schvalovací proces rezervací. Knihu jízd uživatel zakládá z vrácené žádosti; workflow následně přiděluje její identifikátor a zpracovává souhrnné hodnoty jednotlivých jízd.
 
 ## Analýza
 
@@ -30,7 +30,7 @@ Bylo také potřeba zajistit kontrolu schvalování služebních cest a zabráni
 
 Řešením je aplikace PoolCar postavená nad SharePointem, která propojuje několik seznamů (rezervace, vozidla, kalendář rezervací, knihu jízd, jednotlivé jízdy a schvalovatele) pomocí workflow.
 
-Aplikace automatizuje schvalovací proces, rezervuje vozidla v kalendáři, vytváří záznamy v knize jízd, aktualizuje stav vozidel po jejich vrácení a uchovává historii rezervací.
+Aplikace automatizuje schvalovací proces, rezervuje vozidla v kalendáři, podporuje založení knihy jízd, aktualizuje stav vozidel po jejich vrácení a uchovává historii rezervací.
 
 ## Klíčové funkce systému
 
