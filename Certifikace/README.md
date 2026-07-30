@@ -78,6 +78,10 @@ erDiagram
 - založení zaměstnance administrátorem,
 - založení zkoušky nebo certifikace administrátorem.
 
+## Přístup a oprávnění
+
+Přístup k datům a jednotlivým funkcím je řízen oprávněními SharePointu nad příslušnými seznamy. Administrátorské funkce aplikace jsou dostupné pouze oprávněným uživatelům.
+
 ## Moje role
 
 - analýza business požadavků,
