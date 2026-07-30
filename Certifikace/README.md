@@ -2,87 +2,81 @@
 
 ## Přehled
 
-Interní aplikace pro evidenci zaměstnaneckých certifikací, zkoušek a souvisejících uživatelských oprávnění. Řešení centralizuje data, omezuje ruční práci a poskytuje přehled o platnosti certifikací.
+Interní aplikace pro evidenci zaměstnaneckých certifikací. Řešení propojuje evidenci certifikátů zaměstnanců s číselníkem zaměstnanců a číselníkem zkoušek a certifikací.
 
-## Business problém
+## Účel řešení
 
-Evidence certifikací byla roztříštěná mezi více zdrojů a její aktualizace vyžadovala ruční kontrolu. Chyběl jednotný pohled na zaměstnance, certifikace, termíny zkoušek a stav platnosti.
-
-## Cíle řešení
-
-- centralizovat evidenci certifikací,
-- zjednodušit zakládání a úpravu záznamů,
+- centralizovat evidenci certifikací zaměstnanců,
 - umožnit filtrování a rychlé vyhledávání,
-- omezit chybovost při ruční správě dat,
-- připravit řešení pro další automatizaci upozornění a reportingu.
+- zjednodušit zakládání certifikací,
+- umožnit správcům doplňovat zaměstnance a zkoušky do číselníků,
+- ukládat přílohy s certifikáty.
 
 ## Navržené řešení
 
-Aplikace v Microsoft Power Apps pracuje s daty uloženými v SharePoint Online. Uživatelské rozhraní umožňuje správu zaměstnanců, certifikací a zkoušek. Přístup k funkcím je řízen podle role uživatele.
+Aplikace v Microsoft Power Apps pracuje se třemi SharePoint Online seznamy. Hlavní seznam obsahuje certifikace zaměstnanců, další dva seznamy slouží jako číselníky zaměstnanců a zkoušek. V aktuální verzi řešení není použito workflow.
 
 ## Použité technologie
 
 - Microsoft Power Apps
 - SharePoint Online
-- Microsoft Lists
-- Microsoft 365
 
 ## Architektura
 
 ```mermaid
 flowchart LR
     U[Uživatel] --> A[Power Apps]
-    A --> C[Seznam certifikací]
-    A --> E[Seznam zaměstnanců]
-    A --> X[Seznam zkoušek]
-    A --> R[Seznam rolí a oprávnění]
+    A --> S[UserSkills]
+    A --> P[UserSkillsPeople]
+    A --> E[UserSkillsExamList]
 ```
 
 ## Datový model
 
 ```mermaid
 erDiagram
-    ZAMESTNANEC ||--o{ CERTIFIKACE : vlastni
-    CERTIFIKACE ||--o{ ZKOUSKA : obsahuje
-    UZIVATEL }o--|| ROLE : ma
+    USER_SKILLS_PEOPLE ||--o{ USER_SKILLS : "je přiřazen"
+    USER_SKILLS_EXAM_LIST ||--o{ USER_SKILLS : "je vybrána"
 
-    ZAMESTNANEC {
-        int id
-        string jmeno
-        string email
-        string oddeleni
+    USER_SKILLS_PEOPLE {
+        string Name
+        string Contract
+        string PersonName
+        string ADEmail
+        string MicrosoftCertEmail
+        string Country
+        string BU
+        string Unit
     }
-    CERTIFIKACE {
-        int id
-        string nazev
-        date platnost_od
-        date platnost_do
-        string stav
+    USER_SKILLS_EXAM_LIST {
+        string Title
+        string SkillID
+        string SkillType
+        string RelevantForCompetencies
+        string ExamCompany
     }
-    ZKOUSKA {
-        int id
-        date termin
-        string vysledek
-    }
-    UZIVATEL {
-        int id
-        string email
-    }
-    ROLE {
-        int id
-        string nazev
+    USER_SKILLS {
+        string Name
+        string Title
+        string SkillID
+        date SkillCompletionDate
+        date SkillExpirationDate
+        string SkillStatus
+        string Attachments
     }
 ```
+
+`UserSkills` je hlavní seznam certifikací zaměstnanců. Údaje o zaměstnanci přebírá z `UserSkillsPeople` a údaje o zkoušce nebo certifikaci z `UserSkillsExamList`.
 
 ## Hlavní funkce
 
 - přehled certifikací,
-- filtrování a vyhledávání,
-- založení nové certifikace,
-- založení zaměstnance,
-- evidence zkoušek,
-- editace existujících záznamů,
-- řízení přístupu podle role.
+- jednoduché i kombinované filtrování,
+- vyhledávání podle názvu certifikace,
+- založení nové certifikace zaměstnance,
+- přiložení souboru s certifikátem,
+- založení zaměstnance administrátorem,
+- založení zkoušky nebo certifikace administrátorem.
 
 ## Moje role
 
@@ -95,23 +89,26 @@ erDiagram
 
 ## Galerie
 
-Obrázky budou uloženy ve složce [Images](Images/).
+### Přehled certifikací
 
-Plánované soubory:
+![Přehled certifikací](Images/overview.png)
 
-- `architecture.png`
-- `home-screen.png`
-- `filter.png`
-- `new-certificate.png`
-- `new-user.png`
-- `new-exam.png`
-- `edit-certificate.png`
-- `sharepoint-lists.png`
+### Formulář certifikace
+
+![Formulář certifikace](Images/certificate-form.png)
+
+### Nová zkouška nebo certifikace
+
+![Nová zkouška nebo certifikace](Images/new-exam.png)
+
+### Nový zaměstnanec
+
+![Nový zaměstnanec](Images/new-employee.png)
+
+### Přehled příloh
+
+![Přehled příloh](Images/attachments.png)
 
 ## Dokumentace
 
 Podrobnosti jsou ve složce [Dokumentace](Dokumentace/).
-
-## Analýza
-
-Business a funkční analýza je ve složce [Analyza](Analyza/).
