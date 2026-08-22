@@ -104,25 +104,31 @@ Podepisující obdrží e-mail s odkazem na dokument. Po otevření projde ově�
 
 Integrace je sestavena z navazujících HTTP akcí v Power Automate. Každý krok využívá identifikátory vrácené předchozí akcí – zejména ID obálky, dokumentu a příjemců. Autentizace probíhá pomocí Bearer tokenu. Tělo požadavků je předáváno jako JSON a binární obsah dokumentu je zpracován v Base64.
 
+### Autentizace vůči DigiSign API
+
+Flow nejprve odešle autentizační požadavek s přístupovým a tajným klíčem a z odpovědi získá časově omezený token pro navazující API volání. Hodnoty klíčů jsou na zveřejněném screenshotu odstraněné.
+
+![Autentizace vůči DigiSign API](Images/07-api-autentizace.png)
+
 ### Vytvoření podpisové obálky
 
-![Vytvoření podpisové obálky přes API](Images/07-api-vytvoreni-obalky.png)
+![Vytvoření podpisové obálky přes API](Images/08-api-vytvoreni-obalky.png)
 
 ### Nahrání dokumentu
 
-![Nahrání dokumentu prostřednictvím API](Images/08-api-nahrani-dokumentu.png)
+![Nahrání dokumentu prostřednictvím API](Images/09-api-nahrani-dokumentu.png)
 
 ### Přidání příjemců
 
-![Přidání příjemců do podpisové obálky](Images/09-api-prijemci.png)
+![Přidání příjemců do podpisové obálky](Images/10-api-prijemci.png)
 
 ### Umístění podpisových polí
 
-![Nastavení pozice podpisových polí](Images/10-api-pozice-podpisu.png)
+![Nastavení pozice podpisových polí](Images/11-api-pozice-podpisu.png)
 
 ### Stažení výsledných dokumentů
 
-![Stažení podepsaných dokumentů](Images/11-api-stazeni-dokumentu.png)
+![Stažení podepsaných dokumentů](Images/12-api-stazeni-dokumentu.png)
 
 ## Řízení stavu a chybové scénáře
 
