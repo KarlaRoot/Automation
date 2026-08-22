@@ -1,7 +1,4 @@
-# Dokumentace
-
-Tato složka je určena pro technickou a uživatelskou dokumentaci aplikace PoolCar.
-# PoolCar
+# PoolCar – technická a uživatelská dokumentace
 
 *rezervace aut na SharePointu*
 
@@ -165,7 +162,7 @@ Formulář obsahuje 9 tlačítek.
 
 Tlačítka jsou viditelná pouze pro příslušné stavy žádosti a skrývají se podle aktuálního stavu žádosti.
 
-Viz stavový diagram.
+Stavový diagram a celkový přehled řešení jsou uvedené v [hlavním README projektu](../README.md#hlavní-proces).
 
 ---
 
@@ -341,7 +338,7 @@ Do formuláře se z Requestu propisuje:
 
 V listu je třeba přeuložit záznam tlačítkem **Vytvoř záznam**.
 
-Pokud se neobjeví **LBookID**, je třeba aktualizovat stránku (**F5**).
+Protože workflow zpracovává nový záznam asynchronně, může se **LBookID** zobrazit se zpožděním. Pokud se identifikátor neobjeví, je v původní verzi řešení třeba aktualizovat stránku (**F5**).
 
 Jinak se neobjeví odkaz **Add New Item** a není možné přidávat jízdy.
 
