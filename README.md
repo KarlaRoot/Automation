@@ -1,6 +1,6 @@
 # Enterprise Automation Projects
 
-Portfolio interních podnikových aplikací vytvořených pomocí technologií Microsoft SharePoint, Power Apps a Nintex. Projekty ukazují analýzu požadavků, návrh datového modelu, vývoj uživatelského rozhraní, správu dat a automatizaci podnikových procesů.
+Portfolio interních podnikových aplikací vytvořených pomocí technologií Microsoft SharePoint, Power Apps, Power Automate a Nintex. Projekty ukazují analýzu požadavků, návrh datového modelu, vývoj uživatelského rozhraní, správu dat a automatizaci podnikových procesů.
 
 > Dokumentace byla anonymizována pro účely portfolia. Osobní údaje, interní adresy, identifikátory a názvy organizací nejsou zveřejněny.
 
@@ -10,6 +10,7 @@ Portfolio interních podnikových aplikací vytvořených pomocí technologií M
 |---|---|---|---|
 | [PoolCar](PoolCar/) | SharePoint 2016, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCar/Dokumentace/) · [Analýza](PoolCar/Analyza/) |
 | [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací | [Dokumentace](Certifikace/Dokumentace/) |
+| [Digitální podpis](Digitalni-podpis/) | Power Automate, SharePoint Online, DigiSign API | Elektronické podepisování dokumentů | [Případová studie](Digitalni-podpis/) |
 
 ## Co portfolio ukazuje
 
@@ -17,16 +18,18 @@ Portfolio interních podnikových aplikací vytvořených pomocí technologií M
 - návrh SharePoint seznamů a vazeb mezi daty,
 - vývoj interních aplikací a formulářů,
 - filtrování, validace a řízení přístupu,
-- workflow a automatizaci procesů,
+- workflow, API integrace a automatizaci procesů,
 - technickou a uživatelskou dokumentaci.
 
 ## Použité technologie
 
 - Microsoft Power Apps
+- Microsoft Power Automate
 - SharePoint Online
 - SharePoint 2016
 - Nintex Forms
 - Nintex Workflow
+- DigiSign REST API
 - Microsoft 365
 
 ## Struktura repozitáře
@@ -37,9 +40,12 @@ Automation/
 ├── PoolCar/
 │   ├── Dokumentace/
 │   └── Analyza/
-└── Certifikace/
+├── Certifikace/
+│   ├── README.md
+│   ├── Dokumentace/
+│   └── Images/
+└── Digitalni-podpis/
     ├── README.md
-    ├── Dokumentace/
     └── Images/
 ```
 
