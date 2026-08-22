@@ -8,7 +8,7 @@ Portfolio interních podnikových aplikací vytvořených pomocí technologií M
 
 | Projekt | Technologie | Zaměření | Dokumentace |
 |---|---|---|---|
-| [PoolCar](PoolCar/) | SharePoint 2016, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Dokumentace](PoolCar/Dokumentace/) · [Analýza](PoolCar/Analyza/) |
+| [PoolCar](PoolCar/) | SharePoint 2016, Nintex Forms, Nintex Workflow | Rezervace služebních vozidel | [Případová studie](PoolCar/) · [Dokumentace](PoolCar/Dokumentace/) · [Analýza](PoolCar/Analyza/) |
 | [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací | [Dokumentace](Certifikace/Dokumentace/) |
 | [Digitální podpis](Digitalni-podpis/) | Power Automate, SharePoint Online, DigiSign API | Elektronické podepisování dokumentů | [Případová studie](Digitalni-podpis/) |
 
@@ -38,6 +38,7 @@ Portfolio interních podnikových aplikací vytvořených pomocí technologií M
 Automation/
 ├── README.md
 ├── PoolCar/
+│   ├── README.md
 │   ├── Dokumentace/
 │   └── Analyza/
 ├── Certifikace/
