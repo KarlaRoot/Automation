@@ -12,6 +12,24 @@ Portfolio interních podnikových aplikací vytvořených pomocí technologií M
 | [Certifikace](Certifikace/) | Microsoft Power Apps, SharePoint Online | Evidence zaměstnaneckých certifikací | [Dokumentace](Certifikace/Dokumentace/) |
 | [Digitální podpis](Digitalni-podpis/) | Power Automate, SharePoint Online, DigiSign API | Elektronické podepisování dokumentů | [Případová studie](Digitalni-podpis/) |
 
+## Ukázky projektů
+
+### Certifikace zaměstnanců (Power Apps)
+
+Ukázka aplikace pro evidenci a správu zaměstnaneckých certifikací.
+
+![Přehled certifikací](Certifikace/Images/overview.png)
+
+[Další ukázky a dokumentace projektu Certifikace](Certifikace/README.md)
+
+### Digitální podpis (Power Automate a DigiSign)
+
+Ukázka procesu elektronického podepisování dokumentů.
+
+![Výzva k elektronickému podpisu](Digitalni-podpis/Images/01-vyzva-k-podpisu.jpg)
+
+[Další ukázky a dokumentace projektu Digitální podpis](Digitalni-podpis/README.md)
+
 ## Co portfolio ukazuje
 
 - převod business požadavků do funkčního řešení,
